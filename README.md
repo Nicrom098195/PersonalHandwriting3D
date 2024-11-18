@@ -38,3 +38,6 @@ Now, what does the above command mean?
 Using your handwriting is as easy as drinking a cup of water. Just run the **config.py** file by doing `python config.py`. A white window will appear, asking you to draw a letter. Don't worry about the size, it will be automatically adjusted later. It can ask to draw a letter multiple times, just so it can use more variants and make a smoother text. After 1 second not writing, the window will close and another one will open, asking another letter or, like I said before, the same one. After drawing every letter, it will stop asking and save your handwriting in the **font.json** file.
 
 You can change the letter settings at the beginning of the **config.py** file.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Nicrom098195/PersonalHandwriting3D/blob/main/LICENSE "LICENSE") file for details.
