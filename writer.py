@@ -63,7 +63,7 @@ def convert(t, height=10, fixedspacing=0, linespacing=0):
                 y-=linespacing
             else:
                 y-=15*height/10
-                x=sx
+            x=sx
         elif p == " ":
             x+=6*height/10
         else:

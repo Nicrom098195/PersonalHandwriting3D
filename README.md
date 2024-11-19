@@ -34,6 +34,7 @@ If you use the **-in** or **-txt** arguments, you must also use the **-out** arg
 - **-out** `<filename>`: Specifies the output file path. The default is **out.gcode**.  
 - **-size** `<number>`: Sets the text size in millimeters. Default is **10**.  
 - **-space** `<number>`: Defines letter spacing. If set to `0` or omitted, spacing will be automatically calculated based on the letter.  
+- **-linesp** `<number>`: Defines line spacing. If set to `0` or omitted, spacing will be automatically calculated based on the font size.  
 - **--show**: Displays the result as dots.  
 - **--showl**: Displays the full lines in the result.  
   > By default, nothing will be displayed.
