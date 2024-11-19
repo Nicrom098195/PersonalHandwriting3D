@@ -54,7 +54,7 @@ Using your handwriting is as simple as drinking a glass of water.
 
 4. When you finish drawing all required letters, the program will save your handwriting in the **font.json** file.  
 
-You can modify letter settings at the beginning of the **config.py** file.
+You can modify letter settings at the beginning of the **config.py** and **writer.py** files.
 
 ## License  
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/Nicrom098195/PersonalHandwriting3D/blob/main/LICENSE "LICENSE") file for details.  

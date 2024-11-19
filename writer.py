@@ -10,7 +10,7 @@ endGC="G1 X0 Y0 Z"+str(upZ)+"\nG28 X\nM84\nM84"
 sx=10
 sy=80
 text="Test"
-speed=3000
+speed=8000
 random=1
 
 with open('font.json', 'r') as file:
