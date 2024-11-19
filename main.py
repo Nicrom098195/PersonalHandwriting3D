@@ -6,6 +6,7 @@ text=None
 height=10
 out="result.gcode"
 space=0
+linespacing=0
 
 if "-in" in sys.argv:
     inf=sys.argv[sys.argv.index("-in")+1]
@@ -31,14 +32,17 @@ ocont=""
 if "-size" in sys.argv:
     height=float(sys.argv[sys.argv.index("-size")+1])
 
+if "-linesp" in sys.argv:
+    linespacing=float(sys.argv[sys.argv.index("-linesp")+1])
+
 if "-space" in sys.argv:
     space=float(sys.argv[sys.argv.index("-space")+1])
 
 if inf:
     with open(inf, "r", encoding="utf-8") as f:
-        ocont=convert(f.read(), height, space)
+        ocont=convert(f.read(), height, space, linespacing)
 else:
-    ocont=convert(text, height, space)
+    ocont=convert(text, height, space, linespacing)
 
 gc=gcode(ocont)
 
