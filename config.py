@@ -97,6 +97,7 @@ if __name__ == "__main__":
         if d in high:
             h=10
         if d in low:
+            h=10
             sh=-5
         mx=0
         mn=9999999999

@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import json
 from random import randint as rint
-import math
+from random import uniform as rnd
 
 downZ=13.2
 upZ=15
@@ -70,13 +70,13 @@ def convert(t, height=10, fixedspacing=0, linespacing=0):
             ind=rint(0, len(data[p])-1)
             for punto in data[p][ind]:
                 if punto[0] == "START":
-                    punti.append(((punto[1][0]*height/10)+(rint(-random, random)/10)+x, (punto[1][1]*height/10)+(rint(-random, random)/10)+y, upZ))
+                    punti.append(((punto[1][0]*height/10)+(rnd(-random, random)/10)+x, (punto[1][1]*height/10)+(rnd(-random, random)/10)+y, upZ))
                     z=downZ
                 elif punto[0] == "NORMAL":
                     z=downZ
                 else:
                     z=upZ
-                punti.append(((punto[1][0]*height/10)+(rint(-random, random)/10)+x, (punto[1][1]*height/10)+(rint(-random, random)/10)+y, z))
+                punti.append(((punto[1][0]*height/10)+(rnd(-random, random)/10)+x, (punto[1][1]*height/10)+(rnd(-random, random)/10)+y, z))
                 xc=max(xc, (punto[1][0]*height/10)-1)
             if fixedspacing:
                 x+=fixedspacing
